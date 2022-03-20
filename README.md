@@ -19,8 +19,15 @@ Looking at the application domain and the type of data, after several tests I re
 #### Architecture 
 ![Neural Network architecture](https://github.com/AlessandroPaparella/BR-transaction-classifier/blob/main/NN_architecture.png "Neural Network architecture")
 
-### 3.1
+### 3.1 Dataset exploration
 
+The training dataset is first pre-processed by eliminating irrelevant columns and splitting it into validation and training files with percentages of 0.1 and 0.9 respectively, this operation can be done locally and is very important for optimizing the use of Google Colab resources, especially if you make use of the free version you risk exhausting the resources (the dataset is very heavy and takes a long time to be transformed into tensors).
+
+The most interesting part of the dataset is represented by the column "txTrace" which contains the stack of calls made in the transaction, this recursive structure is explored through DFS in order to transform the dataset into a 3d tensor [samples x time x features] suitable for RNNs, where the time dimension is the sequence of calls and the features are the attributes of individual calls.
+
+### 3.2 Training
+
+##
 
 ### 3.2 Files
 
