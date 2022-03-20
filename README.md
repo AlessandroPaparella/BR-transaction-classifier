@@ -14,6 +14,14 @@ This repository shows only the best performing model that the author has been ab
 
 ## 3. Description
 
+Looking at the application domain and the type of data, after several tests I realized that it would be more appropriate to use a RNN (particularly useful in time series), in particular the LSTM architecture has proved more performant.
+
+#### Architecture 
+
 ### 3.1 Files
 
-## Useful links
+## 4. Useful links
+ * Challenge website: https://alphamev.ai/ 
+ * What is MEV: https://messari.io/article/understanding-mev
+ * Back-running practice: https://www.mev.wiki/attack-examples/back-running
+ * NN graph created with: https://netron.app/
