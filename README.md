@@ -25,14 +25,17 @@ The training dataset is first pre-processed by eliminating irrelevant columns an
 
 The most interesting part of the dataset is represented by the column "txTrace" which contains the stack of calls made in the transaction, this recursive structure is explored through DFS in order to transform the dataset into a 3d tensor [samples x time x features] suitable for RNNs, where the time dimension is the sequence of calls and the features are the attributes of individual calls.
 
-### 3.2 Training
+## 4 Usage
+1. `git clone https://github.com/AlessandroPaparella/BR-transaction-classifier.git`
+2. Move `train.csv` and `test.py` in the repo directory
+3. Run `preprocessing.py`
+4. For training purpose upload `training.csv` and `validation.csv` in your gdrive root
+5. For testing purpose upload weights (available with release) on your gdrive root
+6. Run the respective google colab notebook
 
-##
-
-### 3.2 Files
-
-## 4. Useful links
+## 5. Useful links
  * Challenge: https://alphamev.ai/ 
+ * Dataset download: https://alphamev.ai/data/dataset.zip
  * What is MEV: https://messari.io/article/understanding-mev
  * Back-running practice: https://www.mev.wiki/attack-examples/back-running
  * NN graph created with: https://netron.app/
