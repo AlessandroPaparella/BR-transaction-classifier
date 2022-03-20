@@ -3,7 +3,7 @@
 A classifier for back-runable ethereum transactions made with neural network.
 
 ## 1. About
-I created this classifier during a competition on the recognition of ethereum transactions subject to back-running (more information on this can be found in the useful links). 
+I created this classifier during a competition on the recognition of ethereum transactions subject to back-running (more information on this can be found in the useful links). Also does not include code for the regression problem as no significant results were found and the model could not learn with the available data
 
 This repository shows only the best performing model that the author has been able to obtain, and is the result of several tests and tuning steps of the model.
 
@@ -17,11 +17,15 @@ This repository shows only the best performing model that the author has been ab
 Looking at the application domain and the type of data, after several tests I realized that it would be more appropriate to use a RNN (particularly useful in time series), in particular the LSTM architecture has proved more performant.
 
 #### Architecture 
+![Neural Network architecture](https://github.com/AlessandroPaparella/BR-transaction-classifier/blob/main/NN_architecture.png "Neural Network architecture")
 
-### 3.1 Files
+### 3.1
+
+
+### 3.2 Files
 
 ## 4. Useful links
- * Challenge website: https://alphamev.ai/ 
+ * Challenge: https://alphamev.ai/ 
  * What is MEV: https://messari.io/article/understanding-mev
  * Back-running practice: https://www.mev.wiki/attack-examples/back-running
  * NN graph created with: https://netron.app/
